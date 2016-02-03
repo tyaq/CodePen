@@ -1,0 +1,18 @@
+body {
+  background-color: #03A9F4;  
+  text-align: center;
+}
+
+#timer,  #colorCode{
+  color: #fff;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 8em;
+  margin:  auto;
+  padding-top: 10%;
+  padding-bototm: 5%;
+}
+
+#colorCode {
+  font-size: 4em;
+ 
+}
