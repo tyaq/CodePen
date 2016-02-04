@@ -7,6 +7,14 @@ function tickTock() {
   min = time.getMinutes();
   sec = time.getSeconds();
 
+  //Pads single digits with leading zeros
+  if (min <= 9) {
+    min = '0' + min
+  };
+  if (sec <= 9) {
+    sec = '0' + sec
+  };
+
   // Sets meridiem to AM or PM
   var meridiem = hrs >= 12 ? 'PM' : 'AM';
   var hrs = hrs % 12;
