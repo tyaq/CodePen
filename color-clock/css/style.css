@@ -1,18 +1,29 @@
 body {
-  background-color: #03A9F4;  
+  background-color: #03A9F4;
   text-align: center;
 }
 
-#timer,  #colorCode{
+#timer,
+#colorCode {
   color: #fff;
-  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Open Sans', sans-serif;
   font-size: 8em;
-  margin:  auto;
+  margin: auto;
   padding-top: 10%;
   padding-bototm: 5%;
 }
 
+#clock {
+  display: inline;
+}
+
+#meridiem {
+  display: inline-block;
+  line-height: 100%;
+  font-size: .4em;
+  width: 1em;
+}
+
 #colorCode {
   font-size: 4em;
- 
 }
