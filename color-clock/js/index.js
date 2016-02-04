@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function tickTock() {
   var time, hrs, min, sec;
 
   // gets the hours, min, & sec
@@ -6,7 +6,7 @@ $(document).ready(function() {
   hrs = time.getHours();
   min = time.getMinutes();
   sec = time.getSeconds();
-  
+
   // Sets meridiem to AM or PM
   var meridiem = hrs >= 12 ? 'PM' : 'AM';
   var hrs = hrs % 12;
@@ -14,6 +14,14 @@ $(document).ready(function() {
   hrs = hrs ? hrs : 12;
 
   //Displays time
-  $('#clock').text(hrs + ":" + min );
-  $('#meridiem').text(sec+" "+ meridiem);
+  $('#clock').text(hrs + ":" + min);
+  $('#meridiem').text(sec + " " + meridiem);
+
+};
+
+$(document).ready(function() {
+
+  //Wait 1000 ms before updating
+  setInterval(tickTock, 1000);
+
 });
