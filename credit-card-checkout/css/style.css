@@ -1,137 +1,166 @@
-  * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #999;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transition: 1s all ease-in-out;
-    -webkit-transition: 1s all ease-in-out;
-    -moz-transition: 1s all ease-in-out;
-  }
-  
-  .box {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  table td:nth-child(1) {
-    width: 34px;
-  }
-  
-  table td:nth-child(3) {
-    width: 62px;
-  }
-  
-  .credit-card-box {
-    width: 400px;
-    height: 280px;
-    background: linear-gradient(135deg, #03A9F4, #1976D2);
-    border-radius: 15px;
-    color: #fff !important;
-    text-shadow: 0 1px 1px hsla(0, 0, 0, 0.3);
-  }
-  
-  .input-field.cvv,
-  .input-field.number,
-  .input-field.card-holder,
-  .input-field.card-expiration-date {
-    display: inline-block;
-  }
-  
-  .input-field.cvv {
-    top: -6px;
-    margin-left: 6px !important;
-  }
-  
-  .input-field label {
-    color: #fff;
-    left: 0rem;
-  }
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+body {
+  width:100%;
+    background-image:url(http://woordup.com/wp-content/uploads/2014/02/hot-coffee-cinemagraph-collection-3.gif);
+  background-size:cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  position: absolute;
+  /*     top: 50%; */
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transition: 1s all ease-in-out;
+  -webkit-transition: 1s all ease-in-out;
+  -moz-transition: 1s all ease-in-out;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-panel {
+  padding-bottom: 0px;
+}
+
+#crickets {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table td:nth-child(1) {
+  width: 34px;
+}
+
+table td:nth-child(3) {
+  width: 65px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.credit-card-box {
+  width: 400px;
+  height: 280px;
+  background: linear-gradient(135deg, #03A9F4, #1976D2);
+  border-radius: 15px;
+  color: #fff !important;
+  text-shadow: 0 1px 1px hsla(0, 0, 0, 0.3);
+}
+
+.input-field.cvv,
+.input-field.number,
+.input-field.card-holder,
+.input-field.card-expiration-date {
+  display: inline-block;
+}
+
+.input-field.cvv {
+  top: -6px;
+  margin-left: 6px !important;
+}
+
+.input-field label {
+  color: #fff;
+  left: 0rem;
+}
 
 .select-wrapper+label {
   top: -1.8rem;
 }
 
 .select-wrapper span.caret {
-  top:2px;
-  color:#fff;
+  top: 2px;
+  color: #fff;
 }
-  
-  input:not([type]),
-  input[type=text],
-  input[type=password],
-  input[type=email],
-  input[type=url],
-  input[type=time],
-  input[type=date],
-  input[type=datetime-local],
-  input[type=tel],
-  input[type=number],
-  input[type=search],
-  textarea.materialize-textarea,
-.select-wrapper input.select-dropdown{
-    border-bottom: 1px solid #fff;
-  }
-  
-  .input-card-number {
-    font-size: 30px !important;
-    width: 70px !important;
-    display: inline-block;
-    margin-right: 5px !important;
-  }
-  
-  .input-card-cvv {
-    width: 30px !important;
-    display: inline-block;
-  }
-  
-  .card-holder {
-    width: 150px !important;
-    margin-right: 10px;
-  }
-  
-  .card-expiration-date {
-    display: inline !important;
-  }
-  
-  .card-expiration-date .select-wrapper,.card-expiration-date input{
-    display: inline !important;
-    width: 50px !important;
-  }
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea,
+.select-wrapper input.select-dropdown {
+  border-bottom: 1px solid #fff;
+}
+
+.input-card-number {
+  font-size: 30px !important;
+  width: 70px !important;
+  display: inline-block;
+  margin-right: 5px !important;
+}
+
+.input-card-cvv {
+  width: 30px !important;
+  display: inline-block;
+}
+
+.card-holder {
+  width: 150px !important;
+  margin-right: 10px;
+}
+
+.card-expiration-date {
+  display: inline !important;
+}
+
+.card-expiration-date .select-wrapper,
+.card-expiration-date input {
+  display: inline !important;
+  width: 50px !important;
+}
 
 .card-expiration-date .select-wrapper {
   margin-right: 5px;
 }
 
-.card-expiration-date ul,.card-expiration-date li span{
-    width: 50px !important;
-  }
-  
-  .logo img {
-    position: relative;
-    top: 0px;
-    left: 290px;
-    width: 60px;
-    filter: invert(1);
-    -moz-filter: invert(1);
-    -webkit-filter: invert(1);
-  }
-  
-  .help {
-    text-align: center;
-  }
+.card-expiration-date ul,
+.card-expiration-date li span {
+  width: 50px !important;
+}
+
+.logo img {
+  position: relative;
+  top: 0px;
+  left: 290px;
+  width: 60px;
+  filter: invert(1);
+  -moz-filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
+.checkout {
+  margin: 0px;
+}
+
+.btn-large {
+  margin: 10px 0%;
+  /*   width: 100%; */
+}
+
+.help {
+  text-align: center;
+}
