@@ -41,7 +41,7 @@ function tickTock() {
 function getColor(A, t) {
   var r, b, g;
   var div = 24 * 60 * 60 / 6;
-
+  
   //Creates a peicewise parametric function for Red, blue and green values over 24 hours
   if (t <= div) { //4 Indigo
     b = 181 + ((243 - 181) * t) / div;

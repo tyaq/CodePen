@@ -71,6 +71,35 @@ body {
   transform: translate(-50%, -50%);
 }
 
+#logo {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  width: 50px;
+  -webkit-filter: grayscale(1) contrast(100) invert(1);
+  -mos-filter: grayscale(1) contrast(100) invert(1);
+  -ms-filter: grayscale(1) contrast(100) invert(1);
+  filter: grayscale(1) contrast(100) invert(1);
+}
+
+.light #logo {
+  -webkit-filter: grayscale(1) contrast(2) invert(0);
+  -mos-filter: grayscale(1) contrast(2) invert(0);
+  -ms-filter: grayscale(1) contrast(2) invert(0);
+  filter: grayscale(1) contrast(2) invert(0);
+}
+
+.dark #logo {
+  -webkit-filter: grayscale(1) contrast(100) invert(1);
+  -mos-filter: grayscale(1) contrast(100) invert(1);
+  -ms-filter: grayscale(1) contrast(100) invert(1);
+  filter: grayscale(1) contrast(100) invert(1);
+}
+
+a:hover img{
+    background-color: rgba(0,0,0,0.05);
+}
+
 .light {
   color: #222 !important;
 }
