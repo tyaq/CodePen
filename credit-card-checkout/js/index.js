@@ -1,6 +1,8 @@
+//Does fluid credit card number input
 $('.input-card-number').on('keyup change', function() {
   t = $(this);
-
+  
+  //focuses next input when the fourth number is put in
   if (t.val().length > 3) {
     t.next().focus();
   }
@@ -9,6 +11,8 @@ $('.input-card-number').on('keyup change', function() {
 var $animation_elements = $('.animation-element');
 var $window = $(window);
 
+//On scroll into view animatior
+//Used to drop credit card on receipt
 function check_if_in_view() {
   var window_height = $window.height();
   var window_top_position = $window.scrollTop();
