@@ -1,0 +1,61 @@
+#madlibForm md-input-container {
+  margin: 0 0 0 0 !important;
+  vertical-align:bottom !important;
+  bottom: 6.6px;
+  line-height: 24px;
+}
+
+md-input-container .md-errors-spacer {
+  display: none !important;
+}
+
+#madlibForm p:first-child{
+  line-height: 300%;
+}
+
+md-toolbar md-input-container {
+  padding: 2px !important;
+}
+
+section md-button.md-fab {
+    right: 28px;
+    top: -28px;
+    position: absolute;
+}
+
+h2.md-headline {
+  margin-bottom:0px;
+  color:rgba(255,255,255,1);
+}
+h4.md-subhead {
+  margin-top:0px;
+  color:rgba(255,255,255,1);
+}
+
+md-autocomplete.md-default-theme, md-autocomplete {
+  background:none;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.12);
+}
+
+md-toolbar md-autocomplete .md-whiteframe-1dp, md-toolbar md-autocomplete .md-whiteframe-z1 {
+  box-shadow:none;
+}
+
+md-icon.nav-search {
+  color: rgba(0,0,0,0.87) !important;
+}
+
+md-card button.md-fab {
+  position:absolute;
+  top:23px;
+}
+
+md-content.container {
+  padding-top:48px;
+}
+
+.brand {
+  font-family: 'Lobster', cursive;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Rap Libs</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!-- Credit to Sam Samskies for libberfy api -->
+<html lang="en" ng-app="modelStore">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body ng-cloak>
+
+  <md-toolbar class="md-whiteframe-4dp md-accent ">
+      <div class="md-toolbar-tools " layout-margin>
+        <span class="brand md-display-1 ">Rap Libs</span>
+        <md-icon class="nav-search " md-font-icon="material-icons ">search</md-icon>
+        
+        <span ng-controller="SearchCtrl as ctrl " flex>
+            <md-autocomplete
+              md-input-name="autocompleteField "
+              md-no-cache="ctrl.noCache "
+              md-selected-item="ctrl.selectedItem "
+              md-search-text="ctrl.searchText "
+              md-items="item in ctrl.querySearch(ctrl.searchText) "
+              md-item-text="item.result.full_title "
+              placeholder="Search (Not Working) ">
+              <md-item-template>
+                <span md-highlight-text="ctrl.searchText ">{{item.result.full_title}}</span>
+              </md-item-template>
+              <div ng-messages="searchForm.autocompleteField.$error " ng-if="searchForm.autocompleteField.$touched ">
+                <div ng-message="required ">You <b>must</b> have a favorite state.</div>
+                <div ng-message="minlength ">Your entry is not long enough.</div>
+                <div ng-message="maxlength ">Your entry is too long.</div>
+              </div>
+            </md-autocomplete>
+          </span>
+        
+      </div>
+    </md-toolbar>
+     
+   
+
+    <md-content class="md-padding container " layout="column " layout-wrap layout-align="center center " ng-controller="rapCtrl as ctrl " ng-init="demo()">
+      <section>
+        
+      <md-card md-accent class="md-whiteframe-2dp ">
+        <md-card-title-text class="md-padding " style="background:#212121 ">
+        <md-button class="md-fab md-primary" aria-label="refresh" ng-click="demo()">
+          <md-icon class="nav-autorenew " md-font-icon="material-icons ">autorenew</md-icon>
+                                                                        <md-tooltip md-direction="top">
+          New RapLib
+        </md-tooltip>
+        </md-button>
+        <h2 class="md-headline ">Song Cry</h2>
+      <h4 class="md-subhead ">by Jay-Z</h4>
+          </md-card-title-text>
+      <md-content class="md-padding ">
+        <rap-form /></md-content>
+     </md-card>
+        </section>
+    </md-content>
+    
+    
+    
+    
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js "></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js "></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js "></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js "></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.min.js "></script>
+
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js "></script>
+
+
+  </body>
+
+  </html>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
